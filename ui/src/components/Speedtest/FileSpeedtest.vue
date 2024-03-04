@@ -31,7 +31,7 @@ const url = ref(new URL(location.href))
   </template>
   <template v-else>
     <n-space justify="space-evenly">
-      <div v-if="appStore.config.public_ipv4">
+      <div v-if="appStore.config.location">
         <h3 style="text-align: center">{{ $t('file_ipv4_speedtest') }}</h3>
         <n-space>
           <n-button
@@ -44,7 +44,7 @@ const url = ref(new URL(location.href))
             :href="
               url.protocol +
               '//' +
-              appStore.config.public_ipv4 +
+              appStore.config.location +
               ':' +
               url.port +
               '/session/' +
