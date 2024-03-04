@@ -3,7 +3,7 @@ name: 'docker image build'
 on:
   push:
     tags:
-      - '*'
+      - 'v*.*.*'
 
 
 jobs:
@@ -34,4 +34,4 @@ jobs:
           context: .
           platforms: linux/amd64,linux/arm64/v8
           push: true
-          tags: wikihostinc/looking-glass-server:latest
+          tags: docker.io/juouyang/looking-glass-server:${{ github.ref_name }}
