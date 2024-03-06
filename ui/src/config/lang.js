@@ -1,4 +1,4 @@
-import { zhCN, dateZhCN, enUS, dateEnUS } from 'naive-ui'
+import { zhCN, dateZhCN, zhTW, dateZhTW, enUS, dateEnUS } from 'naive-ui'
 import { nextTick } from 'vue'
 import { createI18n } from 'vue-i18n'
 
