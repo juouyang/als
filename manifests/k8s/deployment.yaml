@@ -34,7 +34,7 @@ spec:
         app: als-app
     spec:
       containers:
-        - image: wikihostinc/looking-glass-server:latest
+        - image: docker.io/juouyang/looking-glass-server:1.0.0
           imagePullPolicy: IfNotPresent
           name: als
           envFrom:
