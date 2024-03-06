@@ -17,7 +17,7 @@ const dateLang = computed(() => {
   return currentLang.value.dateLang()
 })
 
-const currentLangCode = ref('zh-CN')
+const currentLangCode = ref('zh-TW')
 const currentLang = computed(() => {
   for (var i in langList) {
     const _lang = langList[i]

@@ -11,6 +11,13 @@ export const list = [
     dateLang: () => dateZhCN
   },
   {
+    label: '繁體中文',
+    value: 'zh-TW',
+    autoChangeMap: ['zh-TW'],
+    uiLang: () => zhTW,
+    dateLang: () => dateZhTW
+  },
+  {
     label: 'English',
     value: 'en-US',
     autoChangeMap: ['en-US', 'en'],

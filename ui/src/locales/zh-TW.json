@@ -1,0 +1,21 @@
+{
+  "server_info": "伺服器資訊",
+  "server_location": "伺服器位置",
+  "server_speedtest": "伺服器網絡測速",
+  "file_speedtest": "檔案下載測試",
+  "file_ipv4_speedtest": "IPv4 下載測試",
+  "file_ipv6_speedtest": "IPv6 下載測試",
+  "librespeed_begin": "開始測試",
+  "librespeed_stop": "停止測試",
+  "librespeed_upload": "下行",
+  "librespeed_download": "上行",
+  "network_tools": "網絡工具",
+  "server_bandwidth_graph": "伺服器流量圖",
+  "server_bandwidth_graph_receive": "已接收",
+  "server_bandwidth_graph_sended": "已發送",
+  "my_address": "您當前的 IP 地址",
+  "ipv4_address": "IPv4 地址",
+  "ipv6_address": "IPv6 地址",
+  "sponsor_message": "節點讚助商消息",
+  "memory_usage": "內存用量"
+}
