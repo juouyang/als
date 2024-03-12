@@ -1,6 +1,7 @@
 package session
 
 import (
+	"log"
 	"context"
 	"encoding/json"
 
@@ -31,6 +32,7 @@ func Handle(c *gin.Context) {
 	c.Writer.Header().Set("Connection", "keep-alive")
 	c.Writer.Header().Set("Access-Control-Allow-Origin", "*")
 	c.SSEvent("SessionId", uuid)
+	log.Default().Println("Client IP address." + c.Request.Header.Get("X-Real-IP") + ", " + c.ClientIP())
 	_config := &sessionConfig{
 		ALSConfig: *config.Config,
 		ClientIP:  c.ClientIP(),

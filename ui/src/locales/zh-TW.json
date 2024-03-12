@@ -14,8 +14,8 @@
   "server_bandwidth_graph_receive": "已接收",
   "server_bandwidth_graph_sended": "已發送",
   "my_address": "您當前的 IP 地址",
-  "ipv4_address": "IPv4 地址",
-  "ipv6_address": "IPv6 地址",
+  "ipv4_address": "伺服器 IPv4 地址",
+  "ipv6_address": "伺服器 IPv6 地址",
   "sponsor_message": "節點讚助商消息",
   "memory_usage": "內存用量"
 }
