@@ -3,3 +3,6 @@ ui/public/speedtest_worker.js
 ui/pnpm-lock.yaml
 backend/embed/ui/
 tmp
+manifests/k8s/nginxinc-ingress.yaml
+manifests/k8s/special-config-secret.yaml
+manifests/k8s/special-config.sh

@@ -8,14 +8,6 @@ spec:
   finalizers:
   - kubernetes
 ---
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: special-config
-  namespace: als
-data:
-  LOCATION: 'als.apps.k8s.<base-domain>'
----
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -34,11 +26,11 @@ spec:
         app: als-app
     spec:
       containers:
-        - image: docker.io/juouyang/looking-glass-server:1.0.0
-          imagePullPolicy: IfNotPresent
+        - image: docker.io/juouyang/looking-glass-server:1.0.1
+          imagePullPolicy: Always
           name: als
           envFrom:
-            - configMapRef:
+            - secretRef:
                 name: special-config
           ports:
             - containerPort: 80
