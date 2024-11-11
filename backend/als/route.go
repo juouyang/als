@@ -17,6 +17,11 @@ import (
 )
 
 func SetupHttpRoute(e *gin.Engine) {
+	// 健康檢查路由
+	e.GET("/health", func(c *gin.Context) {
+		c.JSON(200, gin.H{"status": "ok"})
+	})
+
 	e.GET("/session", session.Handle)
 	v1 := e.Group("/method", controller.MiddlewareSessionOnHeader())
 	{
